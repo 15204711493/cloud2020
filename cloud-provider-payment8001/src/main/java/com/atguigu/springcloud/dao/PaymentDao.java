@@ -7,6 +7,7 @@ import org.springframework.stereotype.Repository;
 @Mapper
 //@Repository
 public interface PaymentDao {
+
     public int create(Payment payment);
 
     public Payment getPaymentById(Long id);
