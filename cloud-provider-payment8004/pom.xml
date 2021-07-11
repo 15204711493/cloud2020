@@ -16,20 +16,8 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-zookeeper-discovery</artifactId>
-<!--            &lt;!&ndash;排除自带的zookeeper3.5.3&ndash;&gt;-->
-<!--            <exclusions>-->
-<!--                <exclusion>-->
-<!--                    <groupId>org.apache.zookeeper</groupId>-->
-<!--                    <artifactId>zookeeper</artifactId>-->
-<!--                </exclusion>-->
-<!--            </exclusions>-->
         </dependency>
 
-<!--        <dependency>-->
-<!--            <groupId>org.apache.zookeeper</groupId>-->
-<!--            <artifactId>zookeeper</artifactId>-->
-<!--            <version>3.5.7</version>-->
-<!--        </dependency>-->
 
         <!--引入自己定义的api通用包-->
         <dependency>
