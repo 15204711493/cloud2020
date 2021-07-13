@@ -13,3 +13,10 @@ ribbon:
   ReadTimeout: 5000
   #请求连接资源时间
   ConnectTimeout: 5000
+
+
+logging:
+  level:
+    #feign以什么级别监控哪个接口
+    com.atguigu.springcloud.service.PaymentFeignService: debug
+
