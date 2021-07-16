@@ -10,15 +10,23 @@ spring:
           uri: https://github.com/15204711493/springcloud-config.git
           search-paths:
             - springcloud-config
-          skip-ssl-validation: true
-          username: 15204711493@163.com
-          password: yjq130725
       label: master
 
+#RabbitMQ支持
+rabbitmq:
+  host: localhost
+  port: 5672
+  username: guest
+  password: guest
 
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:7001/eureka, http://localhost:7002/eureka
 
-
+#rabbitmq相关配置，暴露bus刷新配置的端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'bus-refresh'
