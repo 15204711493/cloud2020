@@ -11,3 +11,6 @@ spring:
       config:
         server-addr: localhost:8848  #nacos配置中心
         file-extension: yaml
+        #namespace: 9271a06a-c74f-4c3a-a6bf-06030aedf3eb
+        group: DEVGROUP
+
