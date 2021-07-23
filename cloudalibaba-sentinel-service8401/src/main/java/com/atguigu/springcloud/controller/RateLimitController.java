@@ -5,6 +5,7 @@ import com.atguigu.springcloud.MyHandler.CustomerBlockHandler;
 import com.atguigu.springcloud.entities.CommonResult;
 import com.atguigu.springcloud.entities.Payment;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -33,4 +34,9 @@ public class RateLimitController {
     public CommonResult customerBlockHandler(){
         return new CommonResult(200,"自定义限流测试ok",new Payment(2020L,"serial001"));
     }
+
+
+
+
+
 }
