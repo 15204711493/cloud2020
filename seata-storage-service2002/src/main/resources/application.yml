@@ -1,9 +1,9 @@
 server:
-  port: 2001
+  port: 2002
 
 spring:
   application:
-    name: seata-order-service
+    name: seata-storage-service
   cloud:
     alibaba:
       seata:
